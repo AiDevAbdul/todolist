@@ -1,0 +1,9 @@
+Excited to share a fun project I built: a web-based calculator! 🚀
+
+This project was a great way to practice my front-end development skills. I used HTML for the structure, CSS for the styling, and JavaScript to make it interactive.
+
+It's amazing how much you can do with just these three technologies. I'm looking forward to building more complex projects in the future!
+
+Check out the code on my GitHub (link in comments) and let me know what you think!
+
+#webdevelopment #html #css #javascript #calculator #frontend #coding #programming

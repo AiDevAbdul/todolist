@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator {
+    background: #1a1a2e;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    border-radius: 12px;
+    background: #16213e;
+    color: #ffffff;
+    outline: none;
+}
+
+.display input::placeholder {
+    color: #6b7280;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-number {
+    background: #2d3748;
+    color: #ffffff;
+}
+
+.btn-number:hover {
+    background: #4a5568;
+}
+
+.btn-operator {
+    background: #4a5568;
+    color: #ffffff;
+}
+
+.btn-operator:hover {
+    background: #667eea;
+}
+
+.btn-equals {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+.btn-equals:hover {
+    opacity: 0.9;
+}
+
+.history {
+    background: #16213e;
+    border-radius: 12px;
+    padding: 15px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.history-label {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#history-list {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.history-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #2d3748;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-expression {
+    color: #6b7280;
+}
+
+.history-result {
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Scrollbar styling */
+.history::-webkit-scrollbar {
+    width: 6px;
+}
+
+.history::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+.history::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 3px;
+}
+
+.history::-webkit-scrollbar-thumb:hover {
+    background: #667eea;
+}
